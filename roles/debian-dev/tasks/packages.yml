@@ -40,8 +40,8 @@
     - posh
     - pyflakes
     - pylint
+    - qemu-system
     - qemu-user-static
-    - qemu-kvm
     - quilt
     - svn-buildpackage
     - swig
