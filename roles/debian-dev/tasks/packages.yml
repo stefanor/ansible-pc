@@ -18,7 +18,6 @@
     - default-jdk
     - developers-reference
     - devscripts
-    - dgit
     - dh-autoreconf
     - dh-exec
     - dh-make
