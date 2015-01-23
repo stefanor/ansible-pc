@@ -1,0 +1,16 @@
+---
+- name: Install console-data
+  sudo: yes
+  apt:
+    name: console-data
+
+- name: Configure /etc/default/keyboard
+  sudo: yes
+  lineinfile:
+    regexp: ^{{ item | regex_replace('=.*', '=')}}
+    line: "{{ item }}"
+    dest: /etc/default/keyboard
+  with_items:
+    - XKBLAYOUT="us"
+    - XKBVARIANT="dvorak"
+    - XKBOPTIONS="compose:menu"

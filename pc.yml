@@ -1,0 +1,5 @@
+- hosts: localhost
+  roles:
+    - debian-std
+    - desktop
+    - debian-dev

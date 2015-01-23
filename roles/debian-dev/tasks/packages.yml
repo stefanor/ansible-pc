@@ -1,0 +1,49 @@
+---
+- name: Install Debian development packages
+  sudo: yes
+  apt:
+    name: "{{ item }}"
+  with_items:
+    - adequate
+    - autopkgtest
+    - ben
+    - build-essential
+    - bzr-builddeb
+    - chrpath
+    - clang
+    - cmake
+    - cython
+    - debian-policy
+    - debmirror
+    - default-jdk
+    - developers-reference
+    - devscripts
+    - dgit
+    - dh-autoreconf
+    - dh-exec
+    - dh-make
+    - dh-python
+    - dpatch
+    - dput-ng
+    - execstack
+    - gdb
+    - gem2deb
+    - git-buildpackage
+    - git-dpm
+    - icnsutils
+    - icoutils
+    - manpages-dev
+    - mr
+    - pep8
+    - perl-doc
+    - piuparts
+    - po4a
+    - posh
+    - pyflakes
+    - pylint
+    - qemu-user-static
+    - qemu-kvm
+    - quilt
+    - svn-buildpackage
+    - swig
+    - ubuntu-dev-tools

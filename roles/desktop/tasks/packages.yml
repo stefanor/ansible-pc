@@ -1,0 +1,34 @@
+---
+- name: Install desktop system packages
+  sudo: yes
+  apt:
+    name: "{{ item }}"
+  with_items:
+    - anacron
+    - iw
+    - lightdm
+    - mate-desktop-environment
+    - powertop
+    - xmonad
+    - xorg
+
+- name: Install desktop apps
+  sudo: yes
+  apt:
+    name: "{{ item }}"
+  with_items:
+    - argyll
+    - bsdgames
+    - blueman
+    - calibre
+    - clipit
+    - colorhug-client
+    - dillo
+    - fpm2
+    - gdmap
+    - gitk
+    - gobby
+    - iceweasel
+    - impressive
+    - mplayer2
+    - sm
