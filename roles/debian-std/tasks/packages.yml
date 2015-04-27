@@ -54,18 +54,20 @@
     - mutt
     - netcat-traditional
     - nmap
+    - pcscd
     - pwgen
     - pxz
     - qrencode
     - reptyr
     - rsync
     - rsyslog
+    - scdaemon
     - screen
     - smartmontools
     - socat
     - strace
-    - swaks
     - sudo
+    - swaks
     - tcpdump
     - tcptraceroute
     - telnet
